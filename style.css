@@ -9,51 +9,73 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: rgb(181, 201, 134);
+    background: rgb(181, 201, 134); /* Màu nền */
+    font-family: Arial, sans-serif; /* Phông chữ dễ đọc */
+}
+
+.wrapper {
+    text-align: center; /* Canh giữa nội dung */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
 }
 
 h2 {
     font-size: 3em;
     color: rgb(131, 19, 88);
-    margin: 15px 0;
+    margin: 20px 0;
 }
 
 .btn-group {
     width: 100%;
-    height: 40px;
+    height: 50px;
     display: flex;
     justify-content: center;
-    align-items: center; /* Canh chỉnh các phần tử con theo chiều dọc */
-    position: relative; /* Đặt vùng chứa nút là relative */
+    align-items: center;
+    position: relative;
     margin-top: 50px;
 }
 
 button {
-    position: absolute;
     width: 200px;
-    height: 50px;
-    color: rgb(121, 13, 80);
+    height: 60px;
+    color: white;
     font-size: 1.2em;
     border-radius: 30px;
     outline: none;
     cursor: pointer;
     box-shadow: 0 2px 4px gray;
     border: 2px solid rgb(111, 18, 18);
-    font-size: 1.2em;
-    left: 60%; 
-    transform: translateX(-60%); 
+    position: relative;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
 }
 
 button:nth-child(1) {
-    margin-left: -300px;
     background: crimson;
+    margin-right: 20px;
 }
 
 button:nth-child(2) {
-    margin-right: -300px;
-    background: crimson;
+    background: rgb(13, 121, 80);
+    margin-left: 20px;
+}
+
+button:nth-child(1):hover {
+    background: darkred;
+}
+
+button:nth-child(2):hover {
+    background: green;
 }
 
 h2.question {
-    font-size: 4em; 
+    font-size: 4em;
+    font-weight: bold;
+    color: rgb(131, 19, 88);
+    text-transform: uppercase;
 }
