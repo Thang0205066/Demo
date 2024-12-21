@@ -81,17 +81,15 @@ button.no-btn:hover {
 
 .image, .gif {
     width: 100%;
-    max-width: 500px;
+    max-width: 400px; /* Giới hạn kích thước ảnh cho vừa trang */
     height: auto;
-    margin-top: 30px;
+    margin: 20px auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .gif {
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     height: auto;
     margin-top: 30px;
     display: none;
