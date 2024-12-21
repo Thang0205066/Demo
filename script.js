@@ -1,4 +1,3 @@
-const wrapper = document.querySelector(".wrapper");
 const question = document.querySelector(".question");
 const gif = document.querySelector(".gif");
 const yesBtn = document.querySelector(".yes-Btn");
@@ -7,7 +6,8 @@ const noBtn = document.querySelector(".no-Btn");
 yesBtn.addEventListener("click", () => {
     console.log("Clicked Yes button");
     question.innerHTML = "I love you too !!!";
-    gif.src ="https://i.imgur.com/amdHoPl.jpeg";
+    gif.src = "https://i.imgur.com/amdHoPl.jpeg";
+    gif.style.display = "block";  // Hiển thị ảnh GIF
 });
 
 noBtn.addEventListener('mouseover', () => {
