@@ -1,15 +1,14 @@
-// Đảm bảo rằng DOM đã sẵn sàng trước khi gắn sự kiện
 document.addEventListener('DOMContentLoaded', function () {
     const question = document.querySelector('.question');
     const gif = document.querySelector('.gif');
-    const yesBtn = document.querySelector('.yes-Btn');
-    const noBtn = document.querySelector('.no-Btn');
+    const yesBtn = document.querySelector('.yes-btn');  // Khớp với class trong HTML
+    const noBtn = document.querySelector('.no-btn');    // Khớp với class trong HTML
 
     // Sự kiện khi nhấn nút "Có"
     yesBtn.addEventListener('click', () => {
         question.innerHTML = 'I love you too !!!';
         gif.src = 'https://i.imgur.com/amdHoPl.jpeg';
-        gif.style.display = 'block';
+        gif.style.display = 'block';  // Hiển thị hình ảnh gif
     });
 
     // Sự kiện khi di chuột qua nút "Không"
